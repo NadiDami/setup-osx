@@ -2,7 +2,5 @@
 
 version="2.2.3"
 
-ruby-build $version ~/.rubies/$version
-chruby $version
+ruby-install ruby $version
 
-gem install bundler
