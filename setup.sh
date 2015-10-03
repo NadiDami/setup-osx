@@ -46,5 +46,6 @@ sh install_casks.sh
 sh install_postgres.sh
 sh install_ruby.sh
 
+sh setup_zsh.sh
 sh setup_git.sh
 sh setup_vim.sh
