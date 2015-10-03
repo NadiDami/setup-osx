@@ -1,5 +1,14 @@
 # Setup OSX
 
+Configuration files for:
+* Homebrew and Homebrew Casks
+* Zsh
+* Vim
+* Git
+* Ruby
+
+...and more!
+
 ## Installation
 
 If you want to install my configuration run:
