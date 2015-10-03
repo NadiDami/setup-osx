@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Install Homebrew
 if ! command -v brew > /dev/null 2>&1; then
   echo "Installing Homebrew..."
@@ -41,3 +43,4 @@ fi
 
 sh install_brews.sh
 sh install_casks.sh
+sh install_postgres.sh
