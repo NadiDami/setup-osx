@@ -1,1 +1,0 @@
-echo "Installation completed successfully!"
