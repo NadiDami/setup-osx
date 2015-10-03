@@ -4,7 +4,7 @@ formulae=(
   "git"
   "chruby"
   "postgresql"
-  "ruby-build"
+  "ruby-install"
   "tmux"
 )
 
