@@ -39,4 +39,5 @@ else
   cd ~/.setup-osx
 fi
 
-sh main_installation.sh
+sh install_brews.sh
+sh install_casks.sh
