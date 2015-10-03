@@ -44,3 +44,4 @@ fi
 sh install_brews.sh
 sh install_casks.sh
 sh install_postgres.sh
+sh install_ruby.sh
