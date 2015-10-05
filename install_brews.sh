@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
 formulae=(
+  "ag"
+  "apg"
   "git"
   "chruby"
   "postgresql"
