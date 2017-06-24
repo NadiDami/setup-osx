@@ -27,7 +27,7 @@ if ! command -v zsh > /dev/null 2>&1 ; then
   # Make Zsh default shell
   chsh -s /usr/local/bin/zsh
 else
-  echo "Zsh is already available...skilling the installation"
+  echo "Zsh is already available...skipping the installation"
   echo "Upgrading Zsh..."
   brew upgrade zsh
 fi
