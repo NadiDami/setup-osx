@@ -1,20 +1,19 @@
 [user]
-	name = Nadia Odunayo
-	email = nodunayo@gmail.com
-[github]
-  user = NadiDami
-[core]
-  editor = vim
-	excludesfile = ~/.gitignore
-  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
-[color]
-  ui = true
-[alias]
-	ci = commit --verbose
-	co = checkout
-  dc = diff --cached
-  lg = log --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset\"
-  lgg = log --graph --decorate --oneline
-	st = status
+  name = Nadia Odunayo
+  email = nodunayo@gmail.com
 [push]
-	default = simple
+  default = simple
+[alias]
+  ci = commit
+  co = checkout
+  dc = diff --cached
+  st = status
+  lg = log --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset\"
+  lgg = log --graph --decorate --oneline --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset\"
+[core]
+  excludesfile = ~/.gitignore
+  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[merge]
+  conflictstyle = diff3
+[push]
+  default = simple
