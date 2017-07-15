@@ -1,21 +1,29 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export PATH=$PATH:/usr/local/go/bin
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 
 ZSH_THEME="clean"
 
 # Aliases
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
 alias -g zfile='vim ~/.zshrc'
-alias -g szfile='source ~/.zshrc'
 alias -g vfile='vim ~/.vimrc'
 alias -g gfile='vim ~/.gitconfig'
+
 alias be="bundle exec"
+
+# chruby configuration
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+# Plugins
+plugins=(git zsh-syntax-highlighting)
+
+# User configuration
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-export PATH="/Users/NadiDami/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
