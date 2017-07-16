@@ -1,5 +1,7 @@
 set nocompatible
+
 execute pathogen#infect()
+
 syntax enable
 
 colorscheme solarized
@@ -11,7 +13,6 @@ set history=50
 set mouse=a
 
 set ruler
-set showcmd
 set incsearch
 set number
 
@@ -31,17 +32,18 @@ set noswapfile
 set nobackup
 set nowritebackup
 
-set colorcolumn=80
+set colorcolumn=110
 
 au BufRead,BufNewFile *.md set filetype=markdown
 
-" Don't use Ex mode, use Q for formatting
-map Q gq
+" Disable accidentally entering Ex mode
+map Q <Nop>
 
 map <silent> <C-n> :NERDTreeToggle<CR>
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
+" so that you can undo CTRL-U without undoing what you typed before it.
+" Still do not properly understand this mapping but feel like it helps me out.
 inoremap <C-U> <C-G>u<C-U>
 
 " Switch between panes more easily
@@ -61,21 +63,21 @@ if has("autocmd")
   filetype plugin indent on
 
   augroup vimrcEx
-  au!
-  autocmd FileType text setlocal textwidth=78
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
+    autocmd!
+
+    autocmd FileType text setlocal textwidth=80
+
+    " When editing a file, always jump to last known cursor position.
+    " Don't do it for commit messages or when the position is invalid.
+    autocmd BufReadPost *
+          \ if line("'\"") > 1 && line("'\"") <= line("$") |
+          \   exe "normal! g`\"" |
+          \ endif
   augroup END
 
 else
-  set autoindent		" always set autoindenting on
-endif " has("autocmd")
-
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+  set autoindent " always set autoindenting on
 endif
 
+" Avoid extra 'shift' keypress when typing colon to go to the command line
 nnoremap ; :
