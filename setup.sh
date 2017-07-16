@@ -10,16 +10,6 @@ else
   brew update
 fi
 
-# Install Caskroom
-if ! command -v brew-cask > /dev/null 2>&1; then
-  echo "Installing Homebrew Cask..."
-  brew install caskroom/cask/brew-cask
-else
-  echo "Homebrew Cask is already available... skipping the installation"
-  echo "Updating Homebrew Cask..."
-  brew update
-fi
-
 # Install zsh
 if ! command -v zsh > /dev/null 2>&1 ; then
   echo "Installing Zsh..."
