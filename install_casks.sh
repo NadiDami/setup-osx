@@ -15,7 +15,6 @@ casks=(
   "kindle"
   "moom"
   "mumble"
-  "s3cmd"
   "screenhero"
   "skype"
   "slack"
