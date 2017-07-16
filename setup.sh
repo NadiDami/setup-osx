@@ -11,15 +11,15 @@ else
 fi
 
 # Install zsh
-if ! command -v zsh > /dev/null 2>&1 ; then
+if command -v `zsh --version` > /dev/null 2>&1; then
   echo "Installing Zsh..."
-  brew install zsh
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   # Make Zsh default shell
   chsh -s /usr/local/bin/zsh
 else
   echo "Zsh is already available...skipping the installation"
   echo "Upgrading Zsh..."
-  brew upgrade zsh
+  upgrade_oh_my_zsh
 fi
 
 # Main installation
