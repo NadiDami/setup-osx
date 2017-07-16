@@ -9,12 +9,16 @@ casks=(
   "firefox"
   "flux"
   "flycut"
+  "gitx"
   "google-chrome"
   "iterm2"
+  "kindle"
+  "moom"
+  "mumble"
   "s3cmd"
+  "screenhero"
   "skype"
   "slack"
-  "things"
   "vlc"
 )
 
