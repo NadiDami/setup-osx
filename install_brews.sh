@@ -1,12 +1,11 @@
 #!/usr/bin/env sh
 
 formulae=(
-  "ag"
-  "apg"
   "git"
   "chruby"
   "postgresql"
   "ruby-install"
+  "the_silver_searcher"
   "tmux"
 )
 
