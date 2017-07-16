@@ -14,7 +14,7 @@ Configuration files for:
 If you want to install my configuration run:
 
 ```
-curl -s https://raw.githubusercontent.com/nadidami/setup-osx/master/setup.sh | bash
+curl -s https://raw.githubusercontent.com/nodunayo/setup-osx/master/setup.sh | bash
 ```
 
 Warning: This is done at your own risk!
