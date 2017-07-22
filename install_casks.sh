@@ -18,6 +18,7 @@ casks=(
   "screenhero"
   "skype"
   "slack"
+  "spotify"
   "vlc"
 )
 
