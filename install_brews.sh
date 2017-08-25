@@ -3,6 +3,7 @@
 formulae=(
   "git"
   "chruby"
+  "heroku"
   "postgresql"
   "ruby-install"
   "the_silver_searcher"
