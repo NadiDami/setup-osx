@@ -79,5 +79,3 @@ else
   set autoindent " always set autoindenting on
 endif
 
-" Avoid extra 'shift' keypress when typing colon to go to the command line
-nnoremap ; :
