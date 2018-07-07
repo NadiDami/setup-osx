@@ -7,6 +7,7 @@ bundle_directory = File.expand_path('~/.vim/bundle')
   https://github.com/altercation/vim-colors-solarized.git
   https://github.com/tpope/vim-commentary.git
   https://github.com/tpope/vim-endwise.git
+  https://github.com/tpope/vim-unimpaired.git
 ).each do |vim_package_url|
   name = File.basename(vim_package_url.split('/').last, '.git')
   path = File.join(bundle_directory, name)
