@@ -5,6 +5,7 @@
   default = simple
 [alias]
   ci = commit
+  dci = duet-commit
   co = checkout
   dc = diff --cached
   st = status
