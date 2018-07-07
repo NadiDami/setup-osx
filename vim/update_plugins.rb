@@ -4,7 +4,6 @@ bundle_directory = File.expand_path('~/.vim/bundle')
 
 %w(
   https://github.com/scrooloose/nerdtree.git
-  https://github.com/altercation/vim-colors-solarized.git
   https://github.com/tpope/vim-commentary.git
   https://github.com/tpope/vim-endwise.git
   https://github.com/tpope/vim-unimpaired.git
