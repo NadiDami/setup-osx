@@ -15,7 +15,6 @@ casks=(
   "kindle"
   "moom"
   "mumble"
-  "screenhero"
   "skype"
   "slack"
   "spotify"
