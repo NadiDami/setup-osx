@@ -4,7 +4,7 @@
 [push]
   default = simple
 [alias]
-  nap =  add -N . && add -p
+  nap =  !git add -N . && git add -p
   ci = commit
   dci = duet-commit
   co = checkout
