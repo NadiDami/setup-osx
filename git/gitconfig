@@ -10,8 +10,8 @@
   co = checkout
   dc = diff --cached
   st = status
-  lg = log --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset\"
-  lgg = log --graph --decorate --oneline --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset\"
+  lg = log --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset%C(red)%d%Creset\"
+  lgg = log --graph --decorate --oneline --pretty=format:\"%C(yellow)%h%Creset %s %C(blue)<%an, %ar>%Creset%C(red)%d%Creset\"
 [core]
   excludesfile = ~/.gitignore
   pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
