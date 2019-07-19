@@ -8,6 +8,7 @@ formulae=(
   "ruby-install"
   "the_silver_searcher"
   "tmux"
+  "yarn"
 )
 
 for formula in ${formulae[@]}
