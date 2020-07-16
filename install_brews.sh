@@ -3,8 +3,10 @@
 formulae=(
   "git"
   "chruby"
+  "elasticsearch"
   "heroku"
   "postgresql"
+  "redis"
   "ruby-install"
   "the_silver_searcher"
   "tmux"
